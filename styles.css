@@ -1,0 +1,12 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+.navigator {
+    height: 64px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
