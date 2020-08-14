@@ -1,12 +1,92 @@
 body {
     width: 100%;
     margin: 0 auto;
+    color: rgb(104, 102, 102);
 }
+main {
+    height: 100rem;
+    position: relative;
+    top: 4rem;
+}
+
+/* NAVIGATION BAR */
+
 .navigator {
     height: 64px;
     width: 100%;
     display: inline-flex;
     justify-content: space-between;
-    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+}
+.left, .right {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.left .word-1 {
+    color: rgb(82, 80, 80);
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+.left .word-2 {
+    color: rgb(153, 153, 153);
+    font-size: 1.3rem;
+}
+.left img {
+    width: 2.5rem;
+}
+.right p {
+    padding-right: 16px;
+    font-size: 1.2rem;
+}
+
+/* INTRO */
+
+
+.intro {
+    width: 100%;
+    background-color: rgb(218, 218, 218);
+}
+.intro img {
+    width: 50%;
+    padding: 32px 24px;
+}
+.content {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.semi-content {
+    width: 30rem;
+    height: 20rem;
+    display: block;
+    padding-left: 40px;
+    padding-top: 100px;
+    color: rgb(82, 80, 80);
+    margin: 0;
+}
+.semi-content h1 {
+    font-size: 3.5rem;
+    margin: 20px 0px;
+}
+.semi-content h3 {
+    font-size: 1.5rem;
+    margin: 20px 0px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.semi-content .box-1 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    height: 3rem;
+    background-color: rgb(82, 80, 80);
     color: white;
+    font-weight: 700;
 }
