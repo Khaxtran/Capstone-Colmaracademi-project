@@ -31,6 +31,12 @@ main {
 .part-2-mobile {
     display: none;
 }
+.part-3-mobile {
+    display: none;
+}
+.foot-mobile {
+    display: none;
+}
 
 
 /* NAVIGATION BAR */
@@ -293,8 +299,9 @@ footer p {
       font-size: 20px;
     }
     main {
-        width: 100%;
+        width: 25.38rem;
         top: 3rem;
+        height: auto;
     }
     img {
         width: 100%;
@@ -312,6 +319,12 @@ footer p {
         display: none;
     }
     .title-second {
+        display: none;
+    }
+    .foot-desktop {
+        display: none;
+    }
+    hr {
         display: none;
     }
 }
@@ -373,7 +386,7 @@ footer p {
         width: 23.8rem;
         display: block;
         padding: 16px;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.294);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.082);
     }
     .cards-details {
         padding: 1rem;
@@ -396,13 +409,69 @@ footer p {
     .part-2-mobile {
       display: block;
       margin: 0 auto;
-      width: 100%;
+      width: 25.38rem;
+      padding-top: 2rem;
+    }
+    .part-2-mobile .title {
+        text-align: center;
+        color: rgb(82, 80, 80);
+        margin: 0;
+        padding-bottom: 2rem;
+        font-size: 2rem;
+    }
+    .big-container {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.082);
+        padding-bottom: 2rem;
     }
     .container-mobile {
+      padding: 0.5rem 1.5rem;
       
     }
     .box {
-        
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(218, 218, 218);
+        height: 5rem;   
     }
+    .box h1 {
+        padding-left: 1rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* MAIN PART 3 FOR MOBILE DEVICES */
+@media only screen and (max-width: 480px) {
+    .part-3-mobile {
+        display: block;
+        margin: 0 auto;
+        width: 25.38rem;
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+      }
+    .part-3-mobile .title {
+        text-align: center;
+        color: rgb(82, 80, 80);
+        margin: 0;
+        padding-bottom: 2rem;
+        font-size: 2rem;
+    }
+    .part-3-mobile video {
+        width: 100%;
+        height: 15rem;
+    }
+}
+
+/* FOOTER FOR MOBILE DEVICES */
+@media only screen and (max-width: 480px) {
+    footer {
+        width: 25.38rem;
+    }
+    .foot-mobile {
+        display: block;
+        margin: 0 auto;
+        font-size: 0.7rem; 
+        padding: 2rem;
+    }
+    
 }
