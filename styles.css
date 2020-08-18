@@ -1,3 +1,6 @@
+html {
+    font-size: 16px;
+}
 body {
     width: 100%;
     margin: 0 auto;
@@ -16,10 +19,23 @@ main {
     color: rgb(82, 80, 80);
     padding: 32px 0px;
 }
+.navigator-mobile {
+    display: none;
+}
+.intro-mobile {
+    display: none;
+}
+.part-1-mobile {
+    display: none;
+}
+.part-2-mobile {
+    display: none;
+}
+
 
 /* NAVIGATION BAR */
 
-.navigator {
+.navigator-desktop {
     height: 64px;
     width: 100%;
     display: inline-flex;
@@ -57,6 +73,9 @@ main {
     font-size: 1.2rem;
 }
 
+.navigator-mobile {
+    display: none;
+}
 /* INTRO */
 
 
@@ -265,4 +284,125 @@ footer p {
 }
 .foot-right p {
     padding-right: 10px;
+}
+
+
+/* MOBILE DEVICES */
+@media only screen and (max-width: 480px) {
+    html {
+      font-size: 20px;
+    }
+    main {
+        width: 100%;
+        top: 3rem;
+    }
+    img {
+        width: 100%;
+    }
+    .navigator-desktop {
+        display: none;
+    }
+    .intro {
+        display: none;
+    }
+    .part-1 {
+        display: none;
+    }
+    .part-2 {
+        display: none;
+    }
+    .title-second {
+        display: none;
+    }
+}
+/* NAVIGATION BAR FOR MOBILE DEVICES */
+@media only screen and (max-width: 480px) {
+    .navigator-mobile {
+        height: 64px;
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-around;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        background-color: white;
+    }
+    .navigator-mobile img {
+        width: 2rem;
+    }
+}
+/* INTRODUCTION FOR MOBILE DEVICES */
+@media only screen and (max-width: 480px) {
+    .intro-mobile {
+        width: 25.38rem;
+        display: block;
+    }
+    .content-mobile {
+        width: 100%;
+        background-color: rgb(218, 218, 218);
+    }
+    .content-details {
+        padding: 32px 16px;
+    }
+    .content-details h1 {
+        padding-bottom: 32px;
+        color: rgb(82, 80, 80);
+        font-size: 2.5rem;
+    }
+    .content-details h3 {
+        padding-bottom: 24px;
+    }
+    .box-1-mobile {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 3rem;
+        background-color: rgb(82, 80, 80);
+        color: white;
+        font-weight: 700;
+    }
+    .box-1-mobile p {
+        margin: 0;
+    }   
+}
+
+/* MAIN PART 1 FOR MOBILE DEVICES */
+@media only screen and (max-width: 480px) {
+    .part-1-mobile {
+        width: 23.8rem;
+        display: block;
+        padding: 16px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.294);
+    }
+    .cards-details {
+        padding: 1rem;
+    }
+    .cards-details h4, p {
+        margin: 0;
+        padding: 0.5rem;
+    }
+    .cards-details h4 {
+        font-size: 1.4rem;
+        color: rgb(82, 80, 80);
+    }
+    .cards-details .read-more {
+        color: rgb(105, 105, 245);
+    }
+}
+
+/* MAIN PART 2 FOR MOBILE DEVICES */
+@media only screen and (max-width: 480px) {
+    .part-2-mobile {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .container-mobile {
+      
+    }
+    .box {
+        
+        
+    }
 }
